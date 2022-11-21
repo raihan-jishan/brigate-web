@@ -1,0 +1,173 @@
+/* 
+title: navbar css
+des: navbar realted css over there
+date: 1 / 11 / 2022
+
+
+*/
+/* style */
+/* main nav */
+.Navbar {
+     
+    display: flex;
+    /* padding: 16px; */
+    font-family: sans-serif;
+    color: white;
+  }
+  #search{
+    color: var(--fontPrimary);
+    display: inline;
+ 
+  }
+  .searchDiv{
+    margin: 23px;
+  }
+  #Logo{
+    font-size: 2rem;
+    margin-left: 80px;
+  }
+  /* navbar link */
+  .Navbar__Link {
+    padding-right: 8px;
+    color: #000;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 14px;
+  }
+  .Navbar__Link:hover{
+    background: rgba(126, 126, 126, 0.089);
+    opacity: 0.8;
+    color: var(--Primary);
+    border-radius: 0.5rem;
+  }
+  .active{
+    color: var(--Primary);
+  }
+  /* B logo */
+
+  .Blogo{
+    color: var(--Primary);
+  }
+  /* search icon */
+ 
+.fa-bars:active{
+    border-bottom: 2px solid var(--Primary);
+    border-radius: 0.2rem;
+     
+}
+/* navbar items */
+  .Navbar__Items {
+    display: flex;
+  }
+  /* navbar items right */
+  .Navbar__Items--right {
+    margin-left:auto;
+  }
+  /* navbar toggle */
+  .Navbar__Link-toggle {
+    display: none;
+  }
+/* uppper navs */
+main{
+  background: var(  --bodyBackground);
+  height: 70px;
+}
+.contactIcons{
+  display: flex;
+  position: absolute;
+  margin: 13px;
+  margin-left: 20%;
+}
+.contactIcons ul li{
+  display: inline-block;
+  top: 0;
+   right: 0;
+   margin: 2px;
+  }
+  .contactIcons ul li i{
+  border-left: 0.4px solid #000;
+  padding: 6px;
+  color: var(--Primary);
+ 
+
+}
+/* social */
+.socialIcons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.socialIcons i{
+  margin: 10px 30px;
+  border-left: 0.2px solid #000;
+  border-right: 0.2px solid #000;
+  padding: 10px;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.socialIcons i:hover{
+  color: var(--Primary);
+  transform: scale(1.1);
+}
+  
+  /* responsibe query */
+  @media only screen and (max-width: 768px) {
+     
+   
+    .Navbar{
+      background: var(--bodyBackground);
+    }
+    .socialIcons{
+      
+      display: none;
+    }
+    .contactIcons{
+      display: none;
+    }
+    main{
+      display: none;
+    }
+    #search{
+      display: flex; 
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: var(--fontPrimary);
+       
+      
+  }
+  .searchDiv{
+    margin: -10px 12px;
+    /* padding: 0px; */
+  }
+    #Logo{
+      font-size: 1.4rem;
+      margin-left: 0px;
+    }
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  }

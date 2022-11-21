@@ -1,0 +1,33 @@
+/* 
+title: main style 
+des: main style file for website
+date: 1 / 11 / 22
+*/
+/* main style */
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+ * 
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-family: 700;
+}
+:root {
+  --activeGreen: #2dbf64;
+  --fontPrimary: #002333;
+  --questionBG: #e4e8ee;
+  --successGreen: #00ff84; 
+  --newGreen    : #1dd881;
+  --bodyBackground: #f6f6f6; 
+  --Primary: #fb5200;
+  --smartBlue: #0070f3;
+  --purpule: #728FCE;
+}
